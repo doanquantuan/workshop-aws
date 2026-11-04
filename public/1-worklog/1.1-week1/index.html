@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title></title>
+    <title>Worklog Tuần 1</title>
     <link href="http://localhost:1313//css/nucleus.css" rel="stylesheet">
     <link href="http://localhost:1313//css/font-awesome.min.css" rel="stylesheet">
     <link href="http://localhost:1313//css/hybrid.css" rel="stylesheet">
@@ -22,7 +22,277 @@
     <script src="http://localhost:1313//js/jquery-2.x.min.js"></script>
     <style type="text/css">:root #header + #content > #left > #rlblock_left
     {display:none !important;}</style>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style type="text/css">
+  :root {
+    --primary: 205.4 100% 30.6%;             
+    --primary-foreground: 0 0% 100%;         
+
+    --secondary: 215.5 55% 23.5%;            
+    --secondary-foreground: 0 0% 100%;       
+
+    --accent: 196.2 71.9% 63.7%;             
+    --accent-foreground: 215.5 55% 23.5%;    
+
+    --muted: 191.4 69.9% 94%;                
+    --muted-foreground: 215.5 35% 45%;       
+
+    --background: 206 50% 97%;               
+    --foreground: 215.5 55% 23.5%;           
+
+     
+    --c-primary: #005A9C;
+    --c-secondary: #1B365D;
+    --c-accent: #60C1E5;
+    --c-muted: #E3F5F9;
+    --c-muted-fg: #4B6B8B;
+    --c-bg: #f4f8fb;
+    --c-fg: #1B365D;
+  }
+
+   
+  body, p, li, a, span, div, table, td, th, input, button {
+    font-family: -apple-system, "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  }
+
+   
+  body {
+    background: var(--c-bg) !important;
+    color: var(--c-fg) !important;
+  }
+
+  #body {
+    background: var(--c-bg) !important;
+  }
+
+   
+  #body-inner {
+    background: #ffffff !important;
+    padding: 2.5rem 3rem !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 24px rgba(27, 54, 93, 0.06) !important;
+    border: 1px solid rgba(160, 224, 239, 0.45) !important;
+    margin-bottom: 3rem !important;
+  }
+
+   
+  h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    text-transform: none !important;
+    letter-spacing: -0.3px !important;
+  }
+
+  h1 {
+    font-weight: 800 !important;
+    color: var(--c-primary) !important;  
+    margin-bottom: 1.5rem !important;
+  }
+
+  h2 {
+    font-weight: 700 !important;
+    color: var(--c-secondary) !important;  
+    border-bottom: 2px solid var(--c-muted) !important;
+    padding-bottom: 0.3rem !important;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 600 !important;
+    color: var(--c-secondary) !important;
+  }
+
+  p, li {
+    color: var(--c-fg) !important;
+    line-height: 1.7 !important;
+  }
+
+   
+  #body a {
+    color: var(--c-primary) !important;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  #body a:hover {
+    color: var(--c-accent) !important;
+    text-decoration: underline;
+  }
+
+   
+  #sidebar {
+    background-color: var(--c-secondary) !important;  
+    box-shadow: 2px 0 12px rgba(27, 54, 93, 0.15) !important;
+  }
+
+  #header-wrapper {
+    background: var(--c-primary) !important;  
+    border-bottom: 3px solid var(--c-accent) !important;  
+    padding: 1.25rem 1rem !important;
+  }
+
+  #header #logo svg, #header #logo svg path {
+    fill: #ffffff !important;
+  }
+
+   
+  .searchbox {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(96, 193, 229, 0.5) !important;
+    border-radius: 6px !important;
+  }
+
+  .searchbox input {
+    color: #ffffff !important;
+  }
+
+  .searchbox input::placeholder {
+    color: rgba(255, 255, 255, 0.65) !important;
+  }
+
+  .searchbox label, .searchbox span {
+    color: var(--c-accent) !important;
+  }
+
+   
+  #sidebar a {
+    color: #dceaf5 !important;
+  }
+
+  #sidebar a:hover {
+    color: #ffffff !important;
+    background: rgba(96, 193, 229, 0.15) !important;
+  }
+
+  #sidebar ul.topics > li > a {
+    font-weight: 500 !important;
+    border-radius: 4px;
+    padding: 4px 8px !important;
+  }
+
+  #sidebar ul.topics > li.parent,
+  #sidebar ul.topics > li.active {
+    background: rgba(0, 90, 156, 0.3) !important;
+    border-radius: 6px;
+  }
+
+  #sidebar ul li.active > a {
+    background: var(--c-primary) !important;  
+    color: #ffffff !important;
+    border-left: 4px solid var(--c-accent) !important;  
+    font-weight: 600 !important;
+    border-radius: 0 6px 6px 0 !important;
+  }
+
+  #sidebar ul li.visited > a .read-icon {
+    color: var(--c-accent) !important;  
+  }
+
+   
+  #sidebar #shortcuts h3 {
+    color: var(--c-accent) !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-top: 1rem !important;
+  }
+
+  #sidebar hr {
+    border-color: rgba(96, 193, 229, 0.25) !important;
+  }
+
+  #sidebar #footer {
+    color: #b7d7ea !important;
+  }
+
+  #sidebar #footer a {
+    color: var(--c-accent) !important;
+  }
+
+  #sidebar #footer font[color="orange"] {
+    color: var(--c-accent) !important;
+  }
+
+   
+  #top-bar {
+    background: transparent !important;
+    border-bottom: 1px solid rgba(160, 224, 239, 0.5) !important;
+    padding-bottom: 0.75rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  #breadcrumbs {
+    color: var(--c-muted-fg) !important;
+    font-size: 0.95rem !important;
+  }
+
+  #breadcrumbs a {
+    color: var(--c-primary) !important;
+    font-weight: 500 !important;
+  }
+
+  #breadcrumbs a:hover {
+    color: var(--c-accent) !important;
+  }
+
+  #sidebar-toggle {
+    color: var(--c-secondary) !important;
+  }
+
+   
+  div.notices {
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    margin: 1.5rem 0 !important;
+  }
+
+  div.notices p {
+    border-radius: 8px !important;
+    line-height: 1.6 !important;
+  }
+
+  div.notices.warning p {
+    border-top: 28px solid var(--c-primary) !important;
+    background: var(--c-muted) !important;
+    color: var(--c-secondary) !important;
+  }
+
+  div.notices.warning p:first-child:after {
+    color: #ffffff !important;
+  }
+
+  div.notices.info p, div.notices.note p {
+    border-top: 28px solid var(--c-secondary) !important;
+    background: var(--c-muted) !important;
+    color: var(--c-secondary) !important;
+  }
+
+  div.notices.tip p {
+    border-top: 28px solid var(--c-primary) !important;
+    background: var(--c-muted) !important;
+    color: var(--c-secondary) !important;
+  }
+
+   
+  code {
+    background: var(--c-muted) !important;
+    color: var(--c-primary) !important;
+    border: 1px solid rgba(96, 193, 229, 0.35) !important;
+    border-radius: 4px !important;
+    padding: 2px 6px !important;
+    font-size: 0.9em !important;
+  }
+
+  #body .nav {
+    color: var(--c-primary) !important;
+  }
+
+  #body .nav:hover {
+    background: rgba(96, 193, 229, 0.15) !important;
+    color: var(--c-accent) !important;
+  }
+</style>
 
   </head>
   <body class="" data-url="/1-worklog/1.1-week1/">
@@ -52,7 +322,7 @@
       <a href="/1-worklog/">
         <span>
           
-          1-Worklogs
+          Nhật ký công việc
           
             <i class="fa fa-check read-icon"></i>
           
@@ -69,6 +339,27 @@
     
     <li class="dd-item active parent" data-nav-id="/1-worklog/1.1-week1/">
       <a href="/1-worklog/1.1-week1/">
+        <span>
+          
+          Worklog Tuần 1
+          
+            <i class="fa fa-check read-icon"></i>
+          
+        </span>
+      </a>
+      
+      
+      
+    </li>
+  
+
+          
+            
+  
+  
+    
+    <li class="dd-item  " data-nav-id="/1-worklog/1.2-week2/">
+      <a href="/1-worklog/1.2-week2/">
         <span>
           
           
@@ -157,24 +448,65 @@
                 
                   
                 
-                
+                <span itemprop="title"> Worklog Tuần 1</span>
               </div>
               
             </div>
 
             </div>
             
-              <div id="chapter">
-            
               <div id="body-inner">
+                
+                <h1>Worklog Tuần 1</h1>
                 
 
 
+<h3 id="mục-tiêu-tuần-1">Mục tiêu tuần 1:</h3>
+<ul>
+<li>Làm quen với AWS, tìm hiểu tổng quan về AWS và môi trường làm việc trên đám mây.</li>
+<li>Tạo tài khoản và quản lý chi phí dịch vụ.</li>
+<li>Tìm hiểu cơ chế quản lý danh tính và quyền truy cập trên AWS</li>
+</ul>
+<h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:</h3>
+<table>
+	<thead>
+			<tr>
+					<th>Thứ</th>
+					<th>Công việc</th>
+					<th>Ngày bắt đầu</th>
+					<th>Ngày hoàn thành</th>
+					<th>Nguồn tài liệu</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>2</td>
+					<td>- Tìm hiểu về dịch vụ AWS <br> - Tạo tài khoản <br> - Thiết lập Quản lý chi phí và ngân sách.</td>
+					<td>01/10/2026</td>
+					<td>01/10/2026</td>
+					<td><a href="https://000001.awsfcaj.com">https://000001.awsfcaj.com</a> <a href="https://000007.awsfcaj.com">https://000007.awsfcaj.com</a></td>
+			</tr>
+			<tr>
+					<td>3</td>
+					<td>- Tìm hiểu về kiểm soát quyền truy cập thông qua dịch vụ IAM <br>  + IAM Group &amp; IAM User <br>  + IAM Policy <br>  + IAM Role <br> - Thực hành: <br>  + IAM Groups &amp; Policies: Tạo nhóm, gán quyền và quản lý IAM Users. <br>  + IAM Roles &amp; Security: Sử dụng IAM Roles, Temporary Security Credentials và áp dụng Least Privilege.<br></td>
+					<td>02/10/2026</td>
+					<td>02/10/2026</td>
+					<td><a href="https://000002.awsfcaj.com">https://000002.awsfcaj.com</a></td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="kết-quả-đạt-được-tuần-1">Kết quả đạt được tuần 1:</h3>
+<ul>
+<li>Tạo thành công tài khoản AWS và tìm hiểu cách nhận tối đa 200 USD AWS Credits.</li>
+<li>Tạo AWS Budget và cấu hình cảnh báo chi phí để theo dõi mức chi tiêu thực tế và dự báo.</li>
+<li>Hiểu cách sử dụng IAM để quản lý quyền truy cập của người dùng thông qua việc thêm các người dùng vào các nhóm chính sách tương ứng.</li>
+<li>Tạo IAM Role và cấu hình quyền cho phép IAM User chuyển đổi vai trò (Switch Role).</li>
+<li>Thực hiện chuyển đổi vai trò thành công trên AWS Management Console và truy cập tài nguyên AWS bằng vai trò được đảm nhận (Assumed Role).</li>
+<li>Áp dụng nguyên tắc Least Privilege (đặc quyền tối thiểu) bằng cách chỉ cấp những quyền cần thiết cho từng tác vụ cụ thể.</li>
+</ul>
 
 
       
-      
-        </div> 
       
       </div>
     </div>

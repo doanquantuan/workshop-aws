@@ -1,0 +1,279 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style type="text/css">
+  :root {
+    --primary: 205.4 100% 30.6%;            /* #005A9C (Ocean Blue) */
+    --primary-foreground: 0 0% 100%;        /* #ffffff */
+
+    --secondary: 215.5 55% 23.5%;           /* #1B365D (Deep Navy) */
+    --secondary-foreground: 0 0% 100%;      /* #ffffff */
+
+    --accent: 196.2 71.9% 63.7%;            /* #60C1E5 (Sky Blue) */
+    --accent-foreground: 215.5 55% 23.5%;   /* #1B365D */
+
+    --muted: 191.4 69.9% 94%;               /* #E3F5F9 (Ice tint) */
+    --muted-foreground: 215.5 35% 45%;      /* #4B6B8B */
+
+    --background: 206 50% 97%;              /* #f4f8fb */
+    --foreground: 215.5 55% 23.5%;          /* #1B365D */
+
+    /* Hex aliases for easy usage */
+    --c-primary: #005A9C;
+    --c-secondary: #1B365D;
+    --c-accent: #60C1E5;
+    --c-muted: #E3F5F9;
+    --c-muted-fg: #4B6B8B;
+    --c-bg: #f4f8fb;
+    --c-fg: #1B365D;
+  }
+
+  /* Font chuẩn tiếng Việt toàn trang */
+  body, p, li, a, span, div, table, td, th, input, button {
+    font-family: -apple-system, "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  }
+
+  /* Toàn bộ nền và chữ trang */
+  body {
+    background: var(--c-bg) !important;
+    color: var(--c-fg) !important;
+  }
+
+  #body {
+    background: var(--c-bg) !important;
+  }
+
+  /* Khung nội dung chính màu trắng nổi bật trên nền --background */
+  #body-inner {
+    background: #ffffff !important;
+    padding: 2.5rem 3rem !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 24px rgba(27, 54, 93, 0.06) !important;
+    border: 1px solid rgba(160, 224, 239, 0.45) !important;
+    margin-bottom: 3rem !important;
+  }
+
+  /* Tiêu đề Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    text-transform: none !important;
+    letter-spacing: -0.3px !important;
+  }
+
+  h1 {
+    font-weight: 800 !important;
+    color: var(--c-primary) !important; /* Ocean Blue */
+    margin-bottom: 1.5rem !important;
+  }
+
+  h2 {
+    font-weight: 700 !important;
+    color: var(--c-secondary) !important; /* Deep Navy */
+    border-bottom: 2px solid var(--c-muted) !important;
+    padding-bottom: 0.3rem !important;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 600 !important;
+    color: var(--c-secondary) !important;
+  }
+
+  p, li {
+    color: var(--c-fg) !important;
+    line-height: 1.7 !important;
+  }
+
+  /* Links */
+  #body a {
+    color: var(--c-primary) !important;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  #body a:hover {
+    color: var(--c-accent) !important;
+    text-decoration: underline;
+  }
+
+  /* =========================================================
+     SIDEBAR (MENU TRÁI)
+     ========================================================= */
+  #sidebar {
+    background-color: var(--c-secondary) !important; /* Deep Navy */
+    box-shadow: 2px 0 12px rgba(27, 54, 93, 0.15) !important;
+  }
+
+  #header-wrapper {
+    background: var(--c-primary) !important; /* Ocean Blue */
+    border-bottom: 3px solid var(--c-accent) !important; /* Sky Blue */
+    padding: 1.25rem 1rem !important;
+  }
+
+  #header #logo svg, #header #logo svg path {
+    fill: #ffffff !important;
+  }
+
+  /* Searchbox */
+  .searchbox {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(96, 193, 229, 0.5) !important;
+    border-radius: 6px !important;
+  }
+
+  .searchbox input {
+    color: #ffffff !important;
+  }
+
+  .searchbox input::placeholder {
+    color: rgba(255, 255, 255, 0.65) !important;
+  }
+
+  .searchbox label, .searchbox span {
+    color: var(--c-accent) !important;
+  }
+
+  /* Menu items & Links */
+  #sidebar a {
+    color: #dceaf5 !important;
+  }
+
+  #sidebar a:hover {
+    color: #ffffff !important;
+    background: rgba(96, 193, 229, 0.15) !important;
+  }
+
+  #sidebar ul.topics > li > a {
+    font-weight: 500 !important;
+    border-radius: 4px;
+    padding: 4px 8px !important;
+  }
+
+  #sidebar ul.topics > li.parent,
+  #sidebar ul.topics > li.active {
+    background: rgba(0, 90, 156, 0.3) !important;
+    border-radius: 6px;
+  }
+
+  #sidebar ul li.active > a {
+    background: var(--c-primary) !important; /* Ocean Blue */
+    color: #ffffff !important;
+    border-left: 4px solid var(--c-accent) !important; /* Sky Blue indicator */
+    font-weight: 600 !important;
+    border-radius: 0 6px 6px 0 !important;
+  }
+
+  #sidebar ul li.visited > a .read-icon {
+    color: var(--c-accent) !important; /* Sky Blue */
+  }
+
+  /* Shortcuts & Footer */
+  #sidebar #shortcuts h3 {
+    color: var(--c-accent) !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-top: 1rem !important;
+  }
+
+  #sidebar hr {
+    border-color: rgba(96, 193, 229, 0.25) !important;
+  }
+
+  #sidebar #footer {
+    color: #b7d7ea !important;
+  }
+
+  #sidebar #footer a {
+    color: var(--c-accent) !important;
+  }
+
+  #sidebar #footer font[color="orange"] {
+    color: var(--c-accent) !important;
+  }
+
+  /* =========================================================
+     TOP BAR & BREADCRUMBS
+     ========================================================= */
+  #top-bar {
+    background: transparent !important;
+    border-bottom: 1px solid rgba(160, 224, 239, 0.5) !important;
+    padding-bottom: 0.75rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  #breadcrumbs {
+    color: var(--c-muted-fg) !important;
+    font-size: 0.95rem !important;
+  }
+
+  #breadcrumbs a {
+    color: var(--c-primary) !important;
+    font-weight: 500 !important;
+  }
+
+  #breadcrumbs a:hover {
+    color: var(--c-accent) !important;
+  }
+
+  #sidebar-toggle {
+    color: var(--c-secondary) !important;
+  }
+
+  /* =========================================================
+     NOTICES / CẢNH BÁO
+     ========================================================= */
+  div.notices {
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    margin: 1.5rem 0 !important;
+  }
+
+  div.notices p {
+    border-radius: 8px !important;
+    line-height: 1.6 !important;
+  }
+
+  div.notices.warning p {
+    border-top: 28px solid var(--c-primary) !important;
+    background: var(--c-muted) !important;
+    color: var(--c-secondary) !important;
+  }
+
+  div.notices.warning p:first-child:after {
+    color: #ffffff !important;
+  }
+
+  div.notices.info p, div.notices.note p {
+    border-top: 28px solid var(--c-secondary) !important;
+    background: var(--c-muted) !important;
+    color: var(--c-secondary) !important;
+  }
+
+  div.notices.tip p {
+    border-top: 28px solid var(--c-primary) !important;
+    background: var(--c-muted) !important;
+    color: var(--c-secondary) !important;
+  }
+
+  /* =========================================================
+     CODE & NAVIGATION ARROWS
+     ========================================================= */
+  code {
+    background: var(--c-muted) !important;
+    color: var(--c-primary) !important;
+    border: 1px solid rgba(96, 193, 229, 0.35) !important;
+    border-radius: 4px !important;
+    padding: 2px 6px !important;
+    font-size: 0.9em !important;
+  }
+
+  #body .nav {
+    color: var(--c-primary) !important;
+  }
+
+  #body .nav:hover {
+    background: rgba(96, 193, 229, 0.15) !important;
+    color: var(--c-accent) !important;
+  }
+</style>
