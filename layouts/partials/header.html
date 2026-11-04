@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.LanguageCode | default "en" }}" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    {{ hugo.Generator }}
+    {{ partial "meta.html" . }}
+    {{ partial "favicon.html" . }}
+    {{ $pageTitle := .Title }}
+    <title>{{ $pageTitle }}</title>
+    <link href="{{ .Site.BaseURL }}/css/nucleus.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}/css/hybrid.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}/css/featherlight.min.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}/css/horsey.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}/css/theme.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}/css/hugo-theme.css" rel="stylesheet">
+    <script src="{{ .Site.BaseURL }}/js/jquery-2.x.min.js"></script>
+    <style type="text/css">:root #header + #content > #left > #rlblock_left
+    {display:none !important;}</style>
+    {{ partial "style.html" . }}
+  </head>
+  <body class="" data-url="{{ .RelPermalink }}">
+    {{ $isChapter := .Params.chapter | default (eq .Kind "section")}}
+    {{ partial "menu.html" . }}
+        <section id="body">
+        <div id="overlay"></div>
+
+        <div class="padding highlightable sticky-parent">
+            
+            <div class="sticky-spacer">
+              <div id="top-bar">
+              {{ if and .IsPage .Site.Params.editURL }}
+                {{ $File := .File }}
+                {{ $Site := .Site }}
+                {{with $File.Path }}
+              <div id="top-github-link">
+                  <a class="github-link" href="{{ $Site.Params.editURL }}{{ replace $File.Dir "\\" "/" }}{{ $File.LogicalName }}" target="blank">
+                    <i class="fa fa-code-fork"></i>
+                    Edit this page
+                  </a>
+              </div>
+                {{ end }}
+              {{ end }}
+              <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                  <span id="sidebar-toggle-span">
+                      <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                  </span>
+                {{ if and (not $isChapter) (.Params.toc) }}
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                {{ end }}
+                {{ if and (ne $.Section "") ($.CurrentSection) }}
+                  {{ if and (ne $.CurrentSection.RelPermalink $.RelPermalink) (ne $.CurrentSection.RelPermalink "/") }}
+                    <a href="{{ $.CurrentSection.RelPermalink }}" itemprop="url"><span itemprop="title">{{ $.CurrentSection.Title }}</span></a> <i class="fa fa-angle-right"></i>
+                  {{ end }}
+                {{ end }}
+                {{ with .Title }}<span itemprop="title"> {{ . }}</span>{{ end }}
+              </div>
+              {{ if .Params.toc }}
+                  {{ partial "toc.html" . }}
+              {{ end }}
+            </div>
+
+            </div>
+            {{ if $isChapter }}
+              <div id="chapter">
+            {{ end }}
+              <div id="body-inner">
+                {{ if not $isChapter }}
+                <h1>{{.Title}}</h1>
+                {{ end }}
+
