@@ -3,7 +3,8 @@ title: "Worklog Tuần 1"
 date: 2024-01-01
 weight: 1
 chapter: false
-pre: " <b> 1.1. </b> "
+prev: "/1-worklog/"
+next: "/1-worklog/1.2-week2/"
 ---
 
 ### Mục tiêu tuần 1:

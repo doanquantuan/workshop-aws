@@ -292,6 +292,38 @@
     background: rgba(96, 193, 229, 0.15) !important;
     color: var(--c-accent) !important;
   }
+
+   
+#body-inner table {
+  width: 100% !important;
+  display: table !important;  
+  table-layout: auto;        
+}
+
+ 
+#body-inner table th:nth-child(1),
+#body-inner table td:nth-child(1) {
+  width: 8%;   
+  text-align: center;
+}
+
+#body-inner table th:nth-child(2),
+#body-inner table td:nth-child(2) {
+  width: 60%;  
+}
+
+#body-inner table th:nth-child(3),
+#body-inner table td:nth-child(3),
+#body-inner table th:nth-child(4),
+#body-inner table td:nth-child(4) {
+  width: 15%;  
+  white-space: nowrap;
+}
+
+#body-inner table th:nth-child(5),
+#body-inner table td:nth-child(5) {
+  width: 10%;  
+}
 </style>
 
   </head>
@@ -362,7 +394,7 @@
       <a href="/1-worklog/1.2-week2/">
         <span>
           
-          
+          Worklog Tuần 2
           
             <i class="fa fa-check read-icon"></i>
           
@@ -515,8 +547,8 @@
 
     <div id="navigation">
         
-        
-        
+        <a class="nav nav-prev" href="/1-worklog/"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/1-worklog/1.2-week2/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

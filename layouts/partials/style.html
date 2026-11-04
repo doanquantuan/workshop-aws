@@ -276,4 +276,36 @@
     background: rgba(96, 193, 229, 0.15) !important;
     color: var(--c-accent) !important;
   }
+
+  /* Thiết lập bảng hiển thị chiếm 100% bề ngang khung chứa */
+#body-inner table {
+  width: 100% !important;
+  display: table !important; /* Tránh trường hợp theme ép table thành block/scroll */
+  table-layout: auto;       /* Hoặc 'fixed' nếu muốn các cột có tỉ lệ cố định */
+}
+
+/* Tùy chỉnh độ rộng từng cột (ví dụ bảng công việc) */
+#body-inner table th:nth-child(1),
+#body-inner table td:nth-child(1) {
+  width: 8%;  /* Cột Thứ */
+  text-align: center;
+}
+
+#body-inner table th:nth-child(2),
+#body-inner table td:nth-child(2) {
+  width: 60%; /* Cột Công việc */
+}
+
+#body-inner table th:nth-child(3),
+#body-inner table td:nth-child(3),
+#body-inner table th:nth-child(4),
+#body-inner table td:nth-child(4) {
+  width: 15%; /* Cột Ngày bắt đầu & Ngày kết thúc */
+  white-space: nowrap;
+}
+
+#body-inner table th:nth-child(5),
+#body-inner table td:nth-child(5) {
+  width: 10%; /* Cột Nguồn tài liệu */
+}
 </style>

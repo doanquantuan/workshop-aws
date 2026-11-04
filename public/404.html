@@ -277,6 +277,38 @@
     background: rgba(96, 193, 229, 0.15) !important;
     color: var(--c-accent) !important;
   }
+
+   
+#body-inner table {
+  width: 100% !important;
+  display: table !important;  
+  table-layout: auto;        
+}
+
+ 
+#body-inner table th:nth-child(1),
+#body-inner table td:nth-child(1) {
+  width: 8%;   
+  text-align: center;
+}
+
+#body-inner table th:nth-child(2),
+#body-inner table td:nth-child(2) {
+  width: 60%;  
+}
+
+#body-inner table th:nth-child(3),
+#body-inner table td:nth-child(3),
+#body-inner table th:nth-child(4),
+#body-inner table td:nth-child(4) {
+  width: 15%;  
+  white-space: nowrap;
+}
+
+#body-inner table th:nth-child(5),
+#body-inner table td:nth-child(5) {
+  width: 10%;  
+}
 </style>
 
   <link href="http://localhost:1313//css/nucleus.css" rel="stylesheet">
