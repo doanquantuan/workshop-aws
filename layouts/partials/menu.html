@@ -49,7 +49,7 @@
           {{ if isset .Params "icon" }}
             {{ printf .Params.icon | safeHTML }}
           {{ end }}
-          {{ .Title }}
+          {{ safeHTML .Params.Pre }}{{ .Title }}{{ safeHTML .Params.Post }}
           {{ if .Site.Params.showVisitedLinks }}
             <i class="fa fa-check read-icon"></i>
           {{ end }}

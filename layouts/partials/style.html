@@ -268,44 +268,55 @@
     font-size: 0.9em !important;
   }
 
-  #body .nav {
+  #body .nav,
+  #body .nav:hover,
+  #body .nav:focus {
     color: var(--c-primary) !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
   }
 
   #body .nav:hover {
     background: rgba(96, 193, 229, 0.15) !important;
     color: var(--c-accent) !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
   }
 
   /* Thiết lập bảng hiển thị chiếm 100% bề ngang khung chứa */
-#body-inner table {
-  width: 100% !important;
-  display: table !important; /* Tránh trường hợp theme ép table thành block/scroll */
-  table-layout: auto;       /* Hoặc 'fixed' nếu muốn các cột có tỉ lệ cố định */
-}
+  #body-inner table {
+    width: 100% !important;
+    display: table !important;
+    table-layout: fixed !important; /* Cố định tỉ lệ cột để không bị nội dung dài kéo giãn */
+    word-wrap: break-word !important;
+  }
 
-/* Tùy chỉnh độ rộng từng cột (ví dụ bảng công việc) */
-#body-inner table th:nth-child(1),
-#body-inner table td:nth-child(1) {
-  width: 8%;  /* Cột Thứ */
-  text-align: center;
-}
+  #body-inner table th,
+  #body-inner table td {
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
 
-#body-inner table th:nth-child(2),
-#body-inner table td:nth-child(2) {
-  width: 60%; /* Cột Công việc */
-}
+  /* Tùy chỉnh độ rộng từng cột */
+  #body-inner table th:nth-child(1),
+  #body-inner table td:nth-child(1) {
+    width: 6% !important;   /* Cột Thứ */
+  }
 
-#body-inner table th:nth-child(3),
-#body-inner table td:nth-child(3),
-#body-inner table th:nth-child(4),
-#body-inner table td:nth-child(4) {
-  width: 15%; /* Cột Ngày bắt đầu & Ngày kết thúc */
-  white-space: nowrap;
-}
+  #body-inner table th:nth-child(2),
+  #body-inner table td:nth-child(2) {
+    width: 48% !important;  /* Cột Công việc */
+  }
 
-#body-inner table th:nth-child(5),
-#body-inner table td:nth-child(5) {
-  width: 10%; /* Cột Nguồn tài liệu */
-}
+  #body-inner table th:nth-child(3),
+  #body-inner table td:nth-child(3),
+  #body-inner table th:nth-child(4),
+  #body-inner table td:nth-child(4) {
+    width: 13% !important;  /* Cột Ngày bắt đầu & Ngày kết thúc */
+  }
+
+  #body-inner table th:nth-child(5),
+  #body-inner table td:nth-child(5) {
+    width: 20% !important;  /* Cột Nguồn tài liệu */
+  }
 </style>

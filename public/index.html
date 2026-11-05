@@ -55,7 +55,7 @@
 
    
   body, p, li, a, span, div, table, td, th, input, button {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    font-family: -apple-system, "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
   }
 
    
@@ -80,7 +80,7 @@
 
    
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    font-family: -apple-system, "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
     text-transform: none !important;
     letter-spacing: -0.3px !important;
   }
@@ -284,13 +284,56 @@
     font-size: 0.9em !important;
   }
 
-  #body .nav {
+  #body .nav,
+  #body .nav:hover,
+  #body .nav:focus {
     color: var(--c-primary) !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
   }
 
   #body .nav:hover {
     background: rgba(96, 193, 229, 0.15) !important;
     color: var(--c-accent) !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+  }
+
+   
+  #body-inner table {
+    width: 100% !important;
+    display: table !important;
+    table-layout: fixed !important;  
+    word-wrap: break-word !important;
+  }
+
+  #body-inner table th,
+  #body-inner table td {
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+
+   
+  #body-inner table th:nth-child(1),
+  #body-inner table td:nth-child(1) {
+    width: 6% !important;    
+  }
+
+  #body-inner table th:nth-child(2),
+  #body-inner table td:nth-child(2) {
+    width: 48% !important;   
+  }
+
+  #body-inner table th:nth-child(3),
+  #body-inner table td:nth-child(3),
+  #body-inner table th:nth-child(4),
+  #body-inner table td:nth-child(4) {
+    width: 13% !important;   
+  }
+
+  #body-inner table th:nth-child(5),
+  #body-inner table td:nth-child(5) {
+    width: 20% !important;   
   }
 </style>
 
@@ -322,7 +365,7 @@
       <a href="/1-worklog/">
         <span>
           
-          Nhật ký công việc
+           <b> 1. </b> Nhật ký công việc
           
             <i class="fa fa-check read-icon"></i>
           
@@ -341,7 +384,49 @@
       <a href="/1-worklog/1.1-week1/">
         <span>
           
-          Worklog Tuần 1
+           <b>1.1. </b> Worklog Tuần 1
+          
+            <i class="fa fa-check read-icon"></i>
+          
+        </span>
+      </a>
+      
+      
+      
+    </li>
+  
+
+          
+            
+  
+  
+    
+    <li class="dd-item  " data-nav-id="/1-worklog/1.2-week2/">
+      <a href="/1-worklog/1.2-week2/">
+        <span>
+          
+           <b>1.2. </b> Worklog Tuần 2
+          
+            <i class="fa fa-check read-icon"></i>
+          
+        </span>
+      </a>
+      
+      
+      
+    </li>
+  
+
+          
+            
+  
+  
+    
+    <li class="dd-item  " data-nav-id="/1-worklog/1.3-week3/">
+      <a href="/1-worklog/1.3-week3/">
+        <span>
+          
+           <b>1.3. </b> Worklog Tuần 3
           
             <i class="fa fa-check read-icon"></i>
           
@@ -389,7 +474,7 @@
     <br>
     <b> Last Updated </b> <br>
     <i>
-        <font color=orange>04-11-2026</font>
+        <font color=orange>05-11-2026</font>
     </i>
 </left>
 <left>
@@ -460,21 +545,118 @@
 <li><a href="7-Feedback/">Sharing and Feedback</a></li>
 </ol>
 
-
-      
-      
+        
+        </div>
       </div>
-    </div>
-
-    
 
     <div id="navigation">
         
         
+
         
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/1-worklog/1.3-week3/" title="Worklog Tuần 3"><i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/1-worklog/" title="Nhật ký công việc" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
     </div>
 
     </section>
+
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
