@@ -2,130 +2,144 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:54262/</loc>
+    <loc>http://localhost:1313/1-worklog/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/1-worklog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/1-worklog/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-09-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54262/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:54262/vi/"
+                href="http://localhost:1313/vi/"
                 />
   </url><url>
-    <loc>http://localhost:54262/1-worklog/</loc>
+    <loc>http://localhost:1313/1-worklog/1.1-week1/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54262/1-worklog/"
+                href="http://localhost:1313/1-worklog/1.1-week1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:54262/vi/1-worklog/"
+                href="http://localhost:1313/vi/1-worklog/1.1-week1/"
                 />
   </url><url>
-    <loc>http://localhost:54262/1-worklog/1.1-week1/</loc>
+    <loc>http://localhost:1313/1-worklog/1.2-week2/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54262/1-worklog/1.1-week1/"
+                href="http://localhost:1313/1-worklog/1.2-week2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:54262/vi/1-worklog/1.1-week1/"
+                href="http://localhost:1313/vi/1-worklog/1.2-week2/"
                 />
   </url><url>
-    <loc>http://localhost:54262/1-worklog/1.2-week2/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:54262/1-worklog/1.2-week2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:54262/vi/1-worklog/1.2-week2/"
-                />
-  </url><url>
-    <loc>http://localhost:54262/1-worklog/1.3-week3/</loc>
+    <loc>http://localhost:1313/1-worklog/1.3-week3/</loc>
     <lastmod>2026-10-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54262/1-worklog/1.3-week3/"
+                href="http://localhost:1313/1-worklog/1.3-week3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:54262/vi/1-worklog/1.3-week3/"
+                href="http://localhost:1313/vi/1-worklog/1.3-week3/"
                 />
   </url><url>
-    <loc>http://localhost:54262/1-worklog/1.4-week4/</loc>
+    <loc>http://localhost:1313/1-worklog/1.4-week4/</loc>
     <lastmod>2026-10-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54262/1-worklog/1.4-week4/"
+                href="http://localhost:1313/1-worklog/1.4-week4/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:54262/vi/1-worklog/1.4-week4/"
+                href="http://localhost:1313/vi/1-worklog/1.4-week4/"
                 />
   </url><url>
-    <loc>http://localhost:54262/1-worklog/1.5-week5/</loc>
+    <loc>http://localhost:1313/1-worklog/1.5-week5/</loc>
+    <lastmod>2026-10-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54262/1-worklog/1.5-week5/"
+                href="http://localhost:1313/1-worklog/1.5-week5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:54262/vi/1-worklog/1.5-week5/"
+                href="http://localhost:1313/vi/1-worklog/1.5-week5/"
                 />
   </url><url>
-    <loc>http://localhost:54262/2-proposal/</loc>
+    <loc>http://localhost:1313/1-worklog/1.6-week6/</loc>
+    <lastmod>2026-11-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54262/2-proposal/"
+                href="http://localhost:1313/1-worklog/1.6-week6/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:54262/vi/2-proposal/"
+                href="http://localhost:1313/vi/1-worklog/1.6-week6/"
                 />
   </url><url>
-    <loc>http://localhost:54262/categories/</loc>
+    <loc>http://localhost:1313/2-proposal/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54262/categories/"
+                href="http://localhost:1313/2-proposal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:54262/vi/categories/"
+                href="http://localhost:1313/vi/2-proposal/"
                 />
   </url><url>
-    <loc>http://localhost:54262/tags/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54262/tags/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:54262/vi/tags/"
+                href="http://localhost:1313/vi/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/tags/"
                 />
   </url>
 </urlset>

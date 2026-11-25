@@ -1,4 +1,4 @@
----
+﻿---
 title: "Worklog Tuần 5"
 date: 2026-10-31
 weight: 5
@@ -17,8 +17,8 @@ pre: " <b>1.5. </b> "
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | 2 | - Tìm hiểu về Serverless Computing và dịch vụ **AWS Lambda** (kiến trúc hướng sự kiện, execution role, triggers). <br> - Thực hành viết hàm Lambda tự động hóa các tác vụ quản trị vận hành: tự động bật/tắt EC2 instances theo lịch trình hoặc tự động dọn dẹp các tài nguyên không sử dụng nhằm tối ưu chi phí. | 26/10/2026 | 26/10/2026 | <https://docs.aws.amazon.com/lambda/latest/dg/welcome.html> |
-| 3 | - Nâng cao năng lực giám sát với **Amazon CloudWatch**: cấu hình CloudWatch Agent để thu thập log ứng dụng và các custom metrics chuyên sâu (Memory, Disk). <br> - Tìm hiểu và triển khai **Grafana**: kết nối nguồn dữ liệu từ Amazon CloudWatch. <br> - Thiết kế và xây dựng Dashboard trên Grafana để trực quan hóa hiệu năng hệ thống và tài nguyên theo thời gian thực. | 28/10/2026 | 28/10/2026 | <https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html> <br> <https://grafana.com/docs/grafana/latest/datasources/aws-cloudwatch/> |
-| 4 | - Tìm hiểu chiến lược gắn nhãn (**AWS Tags**) và tổ chức nhóm tài nguyên với **AWS Resource Groups**. <br> - Tìm hiểu dịch vụ **AWS Systems Manager (SSM)**: cơ chế hoạt động của SSM Agent, IAM Role cho máy chủ EC2. <br> - Thực hành quản trị máy chủ từ xa an toàn không cần mở port SSH/RDP thông qua **Session Manager** và thực thi lệnh hàng loạt với **Run Command**. | 30/10/2026 | 30/10/2026 | <https://000058.awsfcaj.com> <br> <https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html> <br> <https://docs.aws.amazon.com/ARG/latest/userguide/welcome.html> |
+| 4 | - Nâng cao năng lực giám sát với **Amazon CloudWatch**: cấu hình CloudWatch Agent để thu thập log ứng dụng và các custom metrics chuyên sâu (Memory, Disk). <br> - Tìm hiểu và triển khai **Grafana**: kết nối nguồn dữ liệu từ Amazon CloudWatch. <br> - Thiết kế và xây dựng Dashboard trên Grafana để trực quan hóa hiệu năng hệ thống và tài nguyên theo thời gian thực. | 28/10/2026 | 28/10/2026 | <https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html> <br> <https://grafana.com/docs/grafana/latest/datasources/aws-cloudwatch/> |
+| 6 | - Tìm hiểu chiến lược gắn nhãn (**AWS Tags**) và tổ chức nhóm tài nguyên với **AWS Resource Groups**. <br> - Tìm hiểu dịch vụ **AWS Systems Manager (SSM)**: cơ chế hoạt động của SSM Agent, IAM Role cho máy chủ EC2. <br> - Thực hành quản trị máy chủ từ xa an toàn không cần mở port SSH/RDP thông qua **Session Manager** và thực thi lệnh hàng loạt với **Run Command**. | 30/10/2026 | 30/10/2026 | <https://000058.awsfcaj.com> <br> <https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html> <br> <https://docs.aws.amazon.com/ARG/latest/userguide/welcome.html> |
 
 ### Kết quả đạt được tuần 5:
 
